@@ -7,7 +7,7 @@ import java.io.File;
 
 public class SauceDemo {
     @Test
-    public void SelectorTest() throws InterruptedException {
+    public void SelectorTest() throws  InterruptedException {
         ClassLoader classLoader = getClass().getClassLoader();
         File file = new File(classLoader.getResource("drivers/chromedriver.exe").getFile());
         String absolutePath = file.getAbsolutePath();
